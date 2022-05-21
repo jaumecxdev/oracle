@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/jaumecxdev/oracle/issues"
   },
-  "homepage": "https://github.com/jaumecxdev/oracle#readme"
+  "homepage": "https://github.com/jaumecxdev/oracle#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "openzeppelin-solidity": "^4.6.0"
+  }
 }
