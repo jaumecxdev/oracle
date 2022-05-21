@@ -1,3 +1,7 @@
+# Custom
+*.txt
+oracle.code-workspace
+
 # Logs
 logs
 *.log
