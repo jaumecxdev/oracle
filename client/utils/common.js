@@ -1,10 +1,15 @@
+/* import { readFileSync } from 'fs'
+import Web3 from 'web3'
+import { Client, NonceTxMiddleware, SignedTxMiddleware, LocalAddress, CryptoUtils, LoomProvider } from 'loom-js' */
+
 const fs = require('fs')
 const Web3 = require('web3')
 const { Client, NonceTxMiddleware, SignedTxMiddleware, LocalAddress, CryptoUtils, LoomProvider } = require('loom-js')
 
+
 function loadAccount (privateKeyFileName) {
   const extdevChainId = 'extdev-plasma-us1'
-  const privateKeyStr = fs.readFileSync(privateKeyFileName, 'utf-8')
+  const privateKeyStr = readFileSync(privateKeyFileName, 'utf-8')
   const privateKey = CryptoUtils.B64ToUint8Array(privateKeyStr)
   const publicKey = CryptoUtils.publicKeyFromPrivateKey(privateKey)
   const client = new Client(
@@ -29,3 +34,4 @@ function loadAccount (privateKeyFileName) {
 module.exports = {
   loadAccount,
 };
+

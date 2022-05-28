@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jaumecxdev/oracle#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^4.6.0",
-    "openzeppelin-solidity": "^4.6.0"
+    "@truffle/hdwallet-provider": "^2.0.8",
+    "truffle": "^5.5.15"
   }
 }

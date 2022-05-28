@@ -1,6 +1,9 @@
 # Custom
 *.txt
 oracle.code-workspace
+.secret
+.secret_oracle_address
+build/
 
 # Logs
 logs
